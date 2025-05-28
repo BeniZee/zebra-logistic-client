@@ -1,0 +1,18 @@
+.cross-country-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.cross-country-container h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333333;
+}
+
+.cross-country-container p {
+  text-align: center;
+  color: #666666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+} 

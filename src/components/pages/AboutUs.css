@@ -1,0 +1,96 @@
+.about-container {
+  padding: 4rem 0;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.about-intro {
+  margin-bottom: 4rem;
+}
+
+.intro-card {
+  padding: 2rem;
+  background-color: #f8f9fa;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #1976d2;
+}
+
+.features-section {
+  margin-bottom: 4rem;
+}
+
+.feature-card {
+  height: 100%;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  margin-bottom: 1.5rem;
+  color: #1976d2;
+}
+
+.stats-section {
+  margin-bottom: 4rem;
+}
+
+.stat-card {
+  height: 100%;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.mission-section {
+  margin-top: 4rem;
+}
+
+.mission-card {
+  padding: 2rem;
+  background-color: #f8f9fa;
+}
+
+.cta-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+@media (max-width: 960px) {
+  .about-container {
+    padding: 2rem 0;
+  }
+
+  .about-header {
+    margin-bottom: 2rem;
+  }
+
+  .about-intro {
+    margin-bottom: 2rem;
+  }
+
+  .features-section,
+  .stats-section {
+    margin-bottom: 2rem;
+  }
+
+  .feature-card,
+  .stat-card {
+    margin-bottom: 1rem;
+  }
+} 

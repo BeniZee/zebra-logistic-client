@@ -1,0 +1,84 @@
+.mission-container {
+  padding: 4rem 2rem;
+}
+
+.mission-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.mission-title {
+  margin-top: 1rem;
+  color: #1a237e;
+  font-weight: 700;
+}
+
+.mission-content {
+  margin-top: 2rem;
+}
+
+.mission-card {
+  padding: 2rem;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.mission-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  color: #1a237e;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.card-text {
+  color: #666;
+  line-height: 1.6;
+}
+
+.values-card {
+  padding: 2rem;
+}
+
+.value-item {
+  text-align: center;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  height: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.value-item:hover {
+  background: #e3f2fd;
+}
+
+.value-title {
+  color: #1a237e;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.value-description {
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .mission-container {
+    padding: 2rem 1rem;
+  }
+
+  .mission-header {
+    margin-bottom: 2rem;
+  }
+
+  .mission-card {
+    padding: 1.5rem;
+  }
+
+  .value-item {
+    margin-bottom: 1rem;
+  }
+} 

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Zebra stripes background -->
+  <rect width="200" height="60" fill="#1a237e"/>
+  <rect x="0" y="0" width="40" height="60" fill="white"/>
+  <rect x="80" y="0" width="40" height="60" fill="white"/>
+  <rect x="160" y="0" width="40" height="60" fill="white"/>
+  
+  <!-- Text -->
+  <text x="100" y="38" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#1a237e" text-anchor="middle">ZEBRA</text>
+  <text x="100" y="52" font-family="Arial, sans-serif" font-size="12" fill="#1a237e" text-anchor="middle">LOGISTIC</text>
+</svg> 

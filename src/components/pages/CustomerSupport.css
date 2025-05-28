@@ -1,0 +1,39 @@
+.customer-support-container {
+  padding: 4rem 1rem;
+  min-height: calc(100vh - 200px);
+}
+
+/* Dark mode support */
+[data-theme='dark'] .customer-support-container {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+[data-theme='dark'] .MuiPaper-root {
+  background-color: #2d2d2d;
+  color: #ffffff;
+}
+
+[data-theme='dark'] .MuiTypography-colorTextSecondary {
+  color: #b0b0b0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .customer-support-container {
+    padding: 2rem 1rem;
+  }
+}
+
+.customer-support-container h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333333;
+}
+
+.customer-support-container p {
+  text-align: center;
+  color: #666666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+} 

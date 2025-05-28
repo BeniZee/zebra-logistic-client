@@ -1,0 +1,80 @@
+.feedback-container {
+  padding: 4rem 0;
+}
+
+.feedback-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.feedback-form-card {
+  height: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.feedback-form-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-card {
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-3px);
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.testimonial-avatar {
+  background-color: #1976d2;
+  margin-right: 1rem;
+  width: 48px;
+  height: 48px;
+  font-size: 1.2rem;
+}
+
+.testimonial-comment {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #666;
+}
+
+/* Responsive adjustments */
+@media (max-width: 960px) {
+  .feedback-container {
+    padding: 2rem 0;
+  }
+
+  .feedback-form-card {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Form field focus styles */
+.MuiTextField-root .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #1976d2;
+}
+
+.MuiFormControl-root .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #1976d2;
+}
+
+/* Rating star colors */
+.MuiRating-root .MuiRating-iconFilled {
+  color: #ffc107;
+}
+
+/* Button hover effect */
+.MuiButton-containedPrimary:hover {
+  background-color: #1565c0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} 

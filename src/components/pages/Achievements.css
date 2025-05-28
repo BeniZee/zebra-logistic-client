@@ -1,0 +1,100 @@
+.achievements-container {
+  padding: 4rem 0;
+}
+
+.achievements-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.achievements-intro {
+  margin-bottom: 4rem;
+}
+
+.intro-card {
+  padding: 2rem;
+  background-color: #f8f9fa;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #1976d2;
+}
+
+.milestones-section {
+  margin-bottom: 4rem;
+}
+
+.timeline {
+  padding: 2rem 0;
+}
+
+.timeline-paper {
+  padding: 1.5rem;
+  margin: 1rem 0;
+  transition: transform 0.3s ease;
+}
+
+.timeline-paper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.awards-section {
+  margin-bottom: 4rem;
+}
+
+.award-card {
+  height: 100%;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.award-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.award-icon {
+  margin-bottom: 1.5rem;
+  color: #1976d2;
+}
+
+.achievements-cta {
+  margin-top: 4rem;
+}
+
+.cta-card {
+  padding: 3rem;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+@media (max-width: 960px) {
+  .achievements-container {
+    padding: 2rem 0;
+  }
+
+  .achievements-header {
+    margin-bottom: 2rem;
+  }
+
+  .achievements-intro {
+    margin-bottom: 2rem;
+  }
+
+  .milestones-section,
+  .awards-section {
+    margin-bottom: 2rem;
+  }
+
+  .timeline-paper,
+  .award-card {
+    margin-bottom: 1rem;
+  }
+
+  .cta-card {
+    padding: 2rem;
+  }
+} 

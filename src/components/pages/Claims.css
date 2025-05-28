@@ -1,0 +1,79 @@
+.claims-container {
+  padding: 4rem 0;
+}
+
+.claims-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.claims-form-container {
+  margin-bottom: 2rem;
+  background-color: #fff;
+}
+
+.claims-stepper {
+  padding: 2rem 0;
+}
+
+.claims-help {
+  margin-top: 2rem;
+}
+
+/* Form styles */
+.claims-form-container .MuiGrid-item {
+  margin-bottom: 1rem;
+}
+
+.claims-form-container .MuiTypography-h6 {
+  margin-top: 1rem;
+  color: #1976d2;
+  border-bottom: 2px solid #1976d2;
+  padding-bottom: 0.5rem;
+}
+
+.claims-form-container .MuiTextField-root,
+.claims-form-container .MuiFormControl-root {
+  margin-bottom: 1rem;
+}
+
+/* Card styles */
+.claims-form-container .MuiCard-root {
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.claims-form-container .MuiCardContent-root {
+  padding: 1.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 960px) {
+  .claims-container {
+    padding: 2rem 0;
+  }
+
+  .claims-form-container {
+    padding: 1rem !important;
+  }
+
+  .claims-stepper {
+    padding: 1rem 0;
+  }
+}
+
+/* Animation for form transitions */
+.claims-form-container form {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 
