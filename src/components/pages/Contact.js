@@ -1,54 +1,188 @@
 import React from 'react';
-import Map from '../Map';
+import { Container, Typography, Box, Grid, Paper, Button } from '@mui/material';
+import { Link } from 'react-router-dom';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import EmailIcon from '@mui/icons-material/Email';
+import PhoneIcon from '@mui/icons-material/Phone';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import './Contact.css';
 
 const Contact = () => {
   return (
-    <div className="contact-page">
-      <div className="contact-header">
-        <h1>Contact Us</h1>
-        <p>Get in touch with our team for any questions or inquiries</p>
-      </div>
+    <Container maxWidth="lg" sx={{ py: 8, backgroundColor: '#f5f5f5' }}>
+      <Typography 
+        variant="h2" 
+        component="h1" 
+        gutterBottom 
+        align="center"
+        sx={{ 
+          color: '#3B82F6',
+          fontWeight: 'bold',
+          mb: 4
+        }}
+      >
+        Contact Us
+      </Typography>
 
-      <div className="contact-content">
-        <div className="contact-info">
-          <div className="contact-card">
-            <h2>Baltimore Office</h2>
-            <p>1400 W Patapsco Ave</p>
-            <p>Baltimore, MD 21230</p>
-            <p>Phone: (555) 123-4567</p>
-            <p>Email: baltimore@zebralogistics.com</p>
-          </div>
-        </div>
+      <Grid container spacing={4}>
+        <Grid item xs={12} md={6}>
+          <Paper 
+            elevation={3} 
+            sx={{ 
+              p: 4,
+              backgroundColor: '#ffffff',
+              borderRadius: 2,
+              height: '100%'
+            }}
+          >
+            <Typography variant="h4" gutterBottom sx={{ color: '#333', mb: 3 }}>
+              Get in Touch
+            </Typography>
+            
+            <Box sx={{ mb: 4 }}>
+              <Typography variant="body1" sx={{ mb: 2 }}>
+                We're here to help! Choose from the following options to get in touch with us:
+              </Typography>
+            </Box>
 
-        <div className="map-section">
-          <Map />
-        </div>
+            <Grid container spacing={2}>
+              <Grid item xs={12}>
+                <Button
+                  component={Link}
+                  to="/contact/office-location"
+                  variant="contained"
+                  fullWidth
+                  startIcon={<LocationOnIcon />}
+                  sx={{
+                    backgroundColor: '#3B82F6',
+                    '&:hover': {
+                      backgroundColor: '#2563EB'
+                    },
+                    mb: 2
+                  }}
+                >
+                  Office Location
+                </Button>
+              </Grid>
 
-        <div className="contact-form">
-          <h2>Send us a Message</h2>
-          <form>
-            <div className="form-group">
-              <label htmlFor="name">Name</label>
-              <input type="text" id="name" name="name" required />
-            </div>
-            <div className="form-group">
-              <label htmlFor="email">Email</label>
-              <input type="email" id="email" name="email" required />
-            </div>
-            <div className="form-group">
-              <label htmlFor="subject">Subject</label>
-              <input type="text" id="subject" name="subject" required />
-            </div>
-            <div className="form-group">
-              <label htmlFor="message">Message</label>
-              <textarea id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" className="submit-btn">Send Message</button>
-          </form>
-        </div>
-      </div>
-    </div>
+              <Grid item xs={12}>
+                <Button
+                  component={Link}
+                  to="/contact/form"
+                  variant="contained"
+                  fullWidth
+                  startIcon={<EmailIcon />}
+                  sx={{
+                    backgroundColor: '#3B82F6',
+                    '&:hover': {
+                      backgroundColor: '#2563EB'
+                    },
+                    mb: 2
+                  }}
+                >
+                  Contact Form
+                </Button>
+              </Grid>
+
+              <Grid item xs={12}>
+                <Button
+                  component={Link}
+                  to="/contact/support-hours"
+                  variant="contained"
+                  fullWidth
+                  startIcon={<AccessTimeIcon />}
+                  sx={{
+                    backgroundColor: '#3B82F6',
+                    '&:hover': {
+                      backgroundColor: '#2563EB'
+                    },
+                    mb: 2
+                  }}
+                >
+                  Support Hours
+                </Button>
+              </Grid>
+
+              <Grid item xs={12}>
+                <Button
+                  component={Link}
+                  to="/contact/get-quote"
+                  variant="contained"
+                  fullWidth
+                  startIcon={<LocalShippingIcon />}
+                  sx={{
+                    backgroundColor: '#3B82F6',
+                    '&:hover': {
+                      backgroundColor: '#2563EB'
+                    }
+                  }}
+                >
+                  Get a Quote
+                </Button>
+              </Grid>
+            </Grid>
+          </Paper>
+        </Grid>
+
+        <Grid item xs={12} md={6}>
+          <Paper 
+            elevation={3} 
+            sx={{ 
+              p: 4,
+              backgroundColor: '#ffffff',
+              borderRadius: 2,
+              height: '100%'
+            }}
+          >
+            <Typography variant="h4" gutterBottom sx={{ color: '#333', mb: 3 }}>
+              Quick Contact
+            </Typography>
+
+            <Box sx={{ mb: 4 }}>
+              <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
+                <PhoneIcon sx={{ mr: 2, color: '#3B82F6', fontSize: 32 }} />
+                <Box>
+                  <Typography variant="h6" sx={{ color: '#333' }}>
+                    Phone
+                  </Typography>
+                  <Typography variant="body1">
+                    443-820-8354
+                  </Typography>
+                </Box>
+              </Box>
+
+              <Box sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
+                <EmailIcon sx={{ mr: 2, color: '#3B82F6', fontSize: 32 }} />
+                <Box>
+                  <Typography variant="h6" sx={{ color: '#333' }}>
+                    Email
+                  </Typography>
+                  <Typography variant="body1">
+                    info@zebralogistics.com
+                  </Typography>
+                </Box>
+              </Box>
+
+              <Box sx={{ display: 'flex', alignItems: 'center' }}>
+                <LocationOnIcon sx={{ mr: 2, color: '#3B82F6', fontSize: 32 }} />
+                <Box>
+                  <Typography variant="h6" sx={{ color: '#333' }}>
+                    Address
+                  </Typography>
+                  <Typography variant="body1">
+                    11400 W Patapsco Ave
+                  </Typography>
+                  <Typography variant="body1">
+                    Baltimore, MD 21230
+                  </Typography>
+                </Box>
+              </Box>
+            </Box>
+          </Paper>
+        </Grid>
+      </Grid>
+    </Container>
   );
 };
 

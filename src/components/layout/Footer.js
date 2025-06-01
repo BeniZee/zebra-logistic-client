@@ -1,5 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import EmailIcon from '@mui/icons-material/Email';
 import './Footer.css';
 
 const Footer = () => {
@@ -35,11 +41,61 @@ const Footer = () => {
           
           <div className="footer-section">
             <h4>Contact Us</h4>
-            <p>123 Logistics Way</p>
-            <p>City, State 12345</p>
-            <p>Phone: (555) 123-4567</p>
+            <p>11400 W Patapsco Ave</p>
+            <p>Baltimore, MD 21230</p>
+            <p>Phone: 443-820-8354</p>
             <p>Email: info@zebralogistics.com</p>
           </div>
+        </div>
+
+        {/* Social Media Icons */}
+        <div className="social-media-section">
+          <a 
+            href="https://facebook.com/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="social-icon"
+          >
+            <FacebookIcon />
+          </a>
+          <a 
+            href="https://instagram.com/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="social-icon"
+          >
+            <InstagramIcon />
+          </a>
+          <a 
+            href="https://x.com/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="social-icon"
+          >
+            <TwitterIcon />
+          </a>
+          <a 
+            href="https://linkedin.com/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="social-icon"
+          >
+            <LinkedInIcon />
+          </a>
+          <a 
+            href="https://youtube.com/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="social-icon"
+          >
+            <YouTubeIcon />
+          </a>
+          <a 
+            href="mailto:info@zebralogistics.com" 
+            className="social-icon"
+          >
+            <EmailIcon />
+          </a>
         </div>
         
         <div className="footer-bottom">
