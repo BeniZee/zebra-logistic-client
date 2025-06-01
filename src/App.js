@@ -28,6 +28,11 @@ import OurStory from './components/pages/OurStory';
 import Team from './components/pages/Team';
 import Values from './components/pages/Values';
 import Achievements from './components/pages/Achievements';
+import About from './components/pages/About';
+import OfficeLocation from './components/pages/OfficeLocation';
+import ContactForm from './components/pages/ContactForm';
+import SupportHours from './components/pages/SupportHours';
+import GetQuote from './components/pages/GetQuote';
 
 // Components
 import Navigation from './components/layout/Navigation';
@@ -83,12 +88,16 @@ function App() {
           <main>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/about" element={<AboutUs />} />
+              <Route path="/about" element={<About />} />
               <Route path="/team" element={<OurTeam />} />
               <Route path="/mission" element={<OurMission />} />
               <Route path="/why-choose-us" element={<WhyChooseUs />} />
               <Route path="/careers" element={<Careers />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/contact/office-location" element={<OfficeLocation />} />
+              <Route path="/contact/form" element={<ContactForm />} />
+              <Route path="/contact/support-hours" element={<SupportHours />} />
+              <Route path="/contact/get-quote" element={<GetQuote />} />
               <Route path="/services" element={<Services />} />
               <Route path="/services/local-delivery" element={<LocalDelivery />} />
               <Route path="/services/long-haul" element={<LongHaulTransportation />} />
