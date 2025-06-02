@@ -13,7 +13,7 @@ const LogbookService = () => {
 
   return (
     <Container maxWidth="lg" className="logbook-service-container">
-      <Typography variant="h4" className="logbook-service-title">
+      <Typography variant="h4" className="logbook-service-title" sx={{ color: '#3B82F6' }}>
         Driver Management System
       </Typography>
       
@@ -24,6 +24,17 @@ const LogbookService = () => {
           indicatorColor="primary"
           textColor="primary"
           centered
+          sx={{
+            '& .MuiTab-root': {
+              color: '#3B82F6',
+              '&.Mui-selected': {
+                color: '#3B82F6'
+              }
+            },
+            '& .MuiTabs-indicator': {
+              backgroundColor: '#3B82F6'
+            }
+          }}
         >
           <Tab label="Logbook" />
           <Tab label="Time Sheet" />

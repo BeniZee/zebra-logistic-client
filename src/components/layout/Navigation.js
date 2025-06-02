@@ -45,10 +45,10 @@ const Navigation = () => {
       { name: 'Warehousing', path: '/services/warehousing', icon: <WarehouseIcon /> }
     ],
     about: [
-      { name: 'Our Story', path: '/about#story', icon: <BusinessIcon /> },
-      { name: 'Our Team', path: '/about#team', icon: <GroupIcon /> },
-      { name: 'Our Values', path: '/about#values', icon: <EmojiEventsIcon /> },
-      { name: 'Our Achievements', path: '/about#achievements', icon: <LocalActivityIcon /> }
+      { name: 'Our Team', path: '/about/team', icon: <GroupIcon /> },
+      { name: 'Our Values', path: '/about/values', icon: <EmojiEventsIcon /> },
+      { name: 'Our History', path: '/about/history', icon: <BusinessIcon /> },
+      { name: 'Our Achievements', path: '/about/achievements', icon: <LocalActivityIcon /> }
     ],
     contact: [
       { name: 'Contact Form', path: '/contact#form', icon: <ContactMailIcon /> },

@@ -33,6 +33,7 @@ import OfficeLocation from './components/pages/OfficeLocation';
 import ContactForm from './components/pages/ContactForm';
 import SupportHours from './components/pages/SupportHours';
 import GetQuote from './components/pages/GetQuote';
+import OurHistory from './components/pages/OurHistory';
 
 // Components
 import Navigation from './components/layout/Navigation';
@@ -109,6 +110,10 @@ function App() {
               <Route path="/support/tracking" element={<Tracking />} />
               <Route path="/support/claims" element={<Claims />} />
               <Route path="/about/our-story" element={<OurStory />} />
+              <Route path="/about/team" element={<OurTeam />} />
+              <Route path="/about/values" element={<Values />} />
+              <Route path="/about/history" element={<OurHistory />} />
+              <Route path="/about/achievements" element={<Achievements />} />
               <Route path="/login" element={<Login />} />
               <Route path="/driver-management" element={<LogbookService />} />
               <Route path="/driver-application" element={<DriverApplication />} />

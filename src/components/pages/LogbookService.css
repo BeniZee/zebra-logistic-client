@@ -1,45 +1,57 @@
 .logbook-service-container {
-  padding: 2rem 0;
+  padding: 2rem;
+}
+
+.logbook-service-container * {
+  color: #3B82F6 !important;
 }
 
 .logbook-service-title {
   text-align: center;
-  color: #1a237e;
   margin-bottom: 2rem;
+  font-weight: 700;
 }
 
 .logbook-service-tabs {
   margin-bottom: 2rem;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logbook-service-tabs .MuiTab-root {
+  color: #3B82F6 !important;
+}
+
+.logbook-service-tabs .MuiTabs-indicator {
+  background-color: #3B82F6 !important;
 }
 
 .logbook-service-content {
-  background-color: #fff;
-  border-radius: 8px;
-  padding: 2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
 }
 
-/* Dark mode styles */
-[data-theme='dark'] .logbook-service-tabs,
-[data-theme='dark'] .logbook-service-content {
-  background-color: #1a1a1a;
-  color: #fff;
+/* Override Material-UI styles */
+.MuiTypography-root {
+  color: #3B82F6 !important;
 }
 
-[data-theme='dark'] .logbook-service-title {
-  color: #90caf9;
+.MuiInputLabel-root {
+  color: #3B82F6 !important;
+}
+
+.MuiOutlinedInput-root {
+  color: #3B82F6 !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: #3B82F6 !important;
+}
+
+.MuiMenuItem-root {
+  color: #3B82F6 !important;
 }
 
 /* Responsive styles */
 @media (max-width: 768px) {
   .logbook-service-container {
-    padding: 1rem;
-  }
-
-  .logbook-service-content {
     padding: 1rem;
   }
 }
