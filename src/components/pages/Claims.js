@@ -277,9 +277,19 @@ const Claims = () => {
   };
 
   return (
-    <Container maxWidth="lg" className="claims-container">
+    <Container maxWidth="lg" className="claims-container" sx={{ py: 8, backgroundColor: '#f5f5f5' }}>
       <Box className="claims-header">
-        <Typography variant="h2" component="h1" gutterBottom>
+        <Typography 
+          variant="h2" 
+          component="h1" 
+          gutterBottom 
+          align="center"
+          sx={{ 
+            color: '#3B82F6',
+            fontWeight: 'bold',
+            mb: 4
+          }}
+        >
           File a Claim
         </Typography>
         <Typography variant="h6" color="text.secondary" paragraph>

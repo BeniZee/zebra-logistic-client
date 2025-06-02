@@ -4,6 +4,10 @@
   padding: 4rem 2rem;
 }
 
+.careers-container * {
+  color: #3B82F6 !important;
+}
+
 .careers-header {
   text-align: center;
   margin-bottom: 4rem;
@@ -11,12 +15,10 @@
 
 .careers-title {
   margin-top: 1rem;
-  color: #1a237e;
   font-weight: 700;
 }
 
 .careers-subtitle {
-  color: #666;
   margin-top: 1rem;
 }
 
@@ -35,7 +37,6 @@
 }
 
 .job-title {
-  color: #1a237e;
   margin-bottom: 1rem;
   font-weight: 600;
 }
@@ -51,21 +52,18 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #666;
 }
 
 .job-detail svg {
-  color: #1a237e;
+  color: #3B82F6 !important;
 }
 
 .job-description {
-  color: #666;
   margin-bottom: 1.5rem;
   line-height: 1.6;
 }
 
 .requirements-title {
-  color: #1a237e;
   margin-bottom: 1rem;
   font-weight: 600;
 }
@@ -77,7 +75,6 @@
 }
 
 .requirements-list li {
-  color: #666;
   margin-bottom: 0.5rem;
   padding-left: 1.5rem;
   position: relative;
@@ -85,20 +82,19 @@
 
 .requirements-list li:before {
   content: "•";
-  color: #1a237e;
   position: absolute;
   left: 0;
 }
 
 .apply-button {
-  background-color: #1a237e;
-  color: white;
+  background-color: #3B82F6 !important;
+  color: white !important;
   padding: 0.5rem 2rem;
   transition: background-color 0.3s ease;
 }
 
 .apply-button:hover {
-  background-color: #0d47a1;
+  background-color: #2563EB !important;
 }
 
 /* Application Dialog Styles */
@@ -111,7 +107,7 @@
 }
 
 .close-button {
-  color: #666;
+  color: #3B82F6 !important;
 }
 
 .application-form {
@@ -120,17 +116,37 @@
 
 .resume-upload {
   margin-top: 1rem;
-  border-color: #1a237e;
-  color: #1a237e;
+  border-color: #3B82F6 !important;
+  color: #3B82F6 !important;
 }
 
 .resume-upload:hover {
-  background-color: rgba(26, 35, 126, 0.04);
+  background-color: rgba(59, 130, 246, 0.04);
 }
 
 .file-name {
   margin-top: 0.5rem;
-  color: #666;
+}
+
+/* Override Material-UI styles */
+.MuiTypography-root {
+  color: #3B82F6 !important;
+}
+
+.MuiInputLabel-root {
+  color: #3B82F6 !important;
+}
+
+.MuiOutlinedInput-root {
+  color: #3B82F6 !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: #3B82F6 !important;
+}
+
+.MuiMenuItem-root {
+  color: #3B82F6 !important;
 }
 
 /* Responsive styles */

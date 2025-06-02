@@ -4,15 +4,46 @@
   padding: 4rem 1rem;
 }
 
+.warehousing-container * {
+  color: #3B82F6 !important;
+}
+
 .warehousing-container h1 {
   text-align: center;
   margin-bottom: 1rem;
-  color: #333333;
+  font-weight: 700;
 }
 
 .warehousing-container p {
   text-align: center;
-  color: #666666;
   font-size: 1.1rem;
   line-height: 1.6;
+}
+
+/* Override Material-UI styles */
+.MuiTypography-root {
+  color: #3B82F6 !important;
+}
+
+.MuiInputLabel-root {
+  color: #3B82F6 !important;
+}
+
+.MuiOutlinedInput-root {
+  color: #3B82F6 !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: #3B82F6 !important;
+}
+
+.MuiMenuItem-root {
+  color: #3B82F6 !important;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .warehousing-container {
+    padding: 2rem 1rem;
+  }
 } 

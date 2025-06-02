@@ -128,7 +128,7 @@ const Careers = () => {
   return (
     <Container maxWidth="lg" className="careers-container">
       <Box className="careers-header">
-        <WorkIcon sx={{ fontSize: 60, color: '#1a237e' }} />
+        <WorkIcon sx={{ fontSize: 60, color: '#3B82F6' }} />
         <Typography variant="h2" component="h1" className="careers-title">
           Careers at Zebra Logistic
         </Typography>
@@ -147,15 +147,15 @@ const Careers = () => {
                 </Typography>
                 <Box className="job-details">
                   <Box className="job-detail">
-                    <LocationOnIcon />
+                    <LocationOnIcon sx={{ color: '#3B82F6' }} />
                     <Typography>{job.location}</Typography>
                   </Box>
                   <Box className="job-detail">
-                    <ScheduleIcon />
+                    <ScheduleIcon sx={{ color: '#3B82F6' }} />
                     <Typography>{job.type}</Typography>
                   </Box>
                   <Box className="job-detail">
-                    <AttachMoneyIcon />
+                    <AttachMoneyIcon sx={{ color: '#3B82F6' }} />
                     <Typography>{job.salary}</Typography>
                   </Box>
                 </Box>
@@ -174,9 +174,14 @@ const Careers = () => {
               <CardActions>
                 <Button
                   variant="contained"
-                  color="primary"
                   onClick={() => handleJobClick(job)}
                   className="apply-button"
+                  sx={{ 
+                    backgroundColor: '#3B82F6',
+                    '&:hover': {
+                      backgroundColor: '#2563EB'
+                    }
+                  }}
                 >
                   Apply Now
                 </Button>
@@ -193,12 +198,13 @@ const Careers = () => {
         fullWidth
         className="application-dialog"
       >
-        <DialogTitle>
+        <DialogTitle sx={{ color: '#3B82F6' }}>
           Apply for {selectedJob?.title}
           <IconButton
             aria-label="close"
             onClick={handleClose}
             className="close-button"
+            sx={{ color: '#3B82F6' }}
           >
             <CloseIcon />
           </IconButton>
@@ -214,6 +220,14 @@ const Careers = () => {
                   value={applicationData.name}
                   onChange={handleApplicationChange}
                   required
+                  sx={{ 
+                    '& .MuiInputLabel-root': { color: '#3B82F6' },
+                    '& .MuiOutlinedInput-root': {
+                      '& fieldset': { borderColor: '#3B82F6' },
+                      '&:hover fieldset': { borderColor: '#2563EB' },
+                      '&.Mui-focused fieldset': { borderColor: '#3B82F6' }
+                    }
+                  }}
                 />
               </Grid>
               <Grid item xs={12} sm={6}>
@@ -225,6 +239,14 @@ const Careers = () => {
                   value={applicationData.email}
                   onChange={handleApplicationChange}
                   required
+                  sx={{ 
+                    '& .MuiInputLabel-root': { color: '#3B82F6' },
+                    '& .MuiOutlinedInput-root': {
+                      '& fieldset': { borderColor: '#3B82F6' },
+                      '&:hover fieldset': { borderColor: '#2563EB' },
+                      '&.Mui-focused fieldset': { borderColor: '#3B82F6' }
+                    }
+                  }}
                 />
               </Grid>
               <Grid item xs={12} sm={6}>
@@ -235,6 +257,14 @@ const Careers = () => {
                   value={applicationData.phone}
                   onChange={handleApplicationChange}
                   required
+                  sx={{ 
+                    '& .MuiInputLabel-root': { color: '#3B82F6' },
+                    '& .MuiOutlinedInput-root': {
+                      '& fieldset': { borderColor: '#3B82F6' },
+                      '&:hover fieldset': { borderColor: '#2563EB' },
+                      '&.Mui-focused fieldset': { borderColor: '#3B82F6' }
+                    }
+                  }}
                 />
               </Grid>
               <Grid item xs={12} sm={6}>
@@ -246,6 +276,14 @@ const Careers = () => {
                   value={applicationData.experience}
                   onChange={handleApplicationChange}
                   required
+                  sx={{ 
+                    '& .MuiInputLabel-root': { color: '#3B82F6' },
+                    '& .MuiOutlinedInput-root': {
+                      '& fieldset': { borderColor: '#3B82F6' },
+                      '&:hover fieldset': { borderColor: '#2563EB' },
+                      '&.Mui-focused fieldset': { borderColor: '#3B82F6' }
+                    }
+                  }}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -258,6 +296,14 @@ const Careers = () => {
                   value={applicationData.coverLetter}
                   onChange={handleApplicationChange}
                   required
+                  sx={{ 
+                    '& .MuiInputLabel-root': { color: '#3B82F6' },
+                    '& .MuiOutlinedInput-root': {
+                      '& fieldset': { borderColor: '#3B82F6' },
+                      '&:hover fieldset': { borderColor: '#2563EB' },
+                      '&.Mui-focused fieldset': { borderColor: '#3B82F6' }
+                    }
+                  }}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -265,6 +311,14 @@ const Careers = () => {
                   variant="outlined"
                   component="label"
                   className="resume-upload"
+                  sx={{ 
+                    borderColor: '#3B82F6',
+                    color: '#3B82F6',
+                    '&:hover': {
+                      borderColor: '#2563EB',
+                      backgroundColor: 'rgba(59, 130, 246, 0.04)'
+                    }
+                  }}
                 >
                   Upload Resume
                   <input
@@ -284,8 +338,22 @@ const Careers = () => {
               </Grid>
             </Grid>
             <DialogActions>
-              <Button onClick={handleClose}>Cancel</Button>
-              <Button type="submit" variant="contained" color="primary">
+              <Button 
+                onClick={handleClose}
+                sx={{ color: '#3B82F6' }}
+              >
+                Cancel
+              </Button>
+              <Button 
+                type="submit" 
+                variant="contained"
+                sx={{ 
+                  backgroundColor: '#3B82F6',
+                  '&:hover': {
+                    backgroundColor: '#2563EB'
+                  }
+                }}
+              >
                 Submit Application
               </Button>
             </DialogActions>

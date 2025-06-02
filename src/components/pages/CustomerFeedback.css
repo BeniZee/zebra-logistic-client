@@ -1,0 +1,105 @@
+.customer-feedback-container {
+  padding: 2rem 0;
+  background-color: #f5f5f5;
+}
+
+.customer-feedback-container * {
+  color: #3B82F6 !important;
+}
+
+.customer-feedback-title {
+  font-weight: bold !important;
+  margin-bottom: 1rem !important;
+  text-align: center;
+}
+
+.customer-feedback-subtitle {
+  margin-bottom: 2rem !important;
+  text-align: center;
+}
+
+.customer-feedback-section-title {
+  font-weight: bold !important;
+  margin-bottom: 1rem !important;
+}
+
+.customer-feedback-text {
+  margin-bottom: 1rem !important;
+}
+
+.customer-feedback-list {
+  padding-left: 20px;
+}
+
+.customer-feedback-list li {
+  margin-bottom: 0.5rem;
+}
+
+.customer-feedback-form-label {
+  color: #3B82F6 !important;
+}
+
+.customer-feedback-input {
+  color: #3B82F6 !important;
+}
+
+.customer-feedback-input .MuiInputLabel-root {
+  color: #3B82F6 !important;
+}
+
+.customer-feedback-input .MuiOutlinedInput-root fieldset {
+  border-color: #3B82F6 !important;
+}
+
+.customer-feedback-input .MuiOutlinedInput-root:hover fieldset {
+  border-color: #2563EB !important;
+}
+
+.customer-feedback-input .MuiOutlinedInput-root.Mui-focused fieldset {
+  border-color: #3B82F6 !important;
+}
+
+.customer-feedback-rating {
+  color: #3B82F6 !important;
+}
+
+.customer-feedback-button {
+  background-color: #3B82F6 !important;
+}
+
+.customer-feedback-button:hover {
+  background-color: #2563EB !important;
+}
+
+.customer-feedback-alert {
+  color: #3B82F6 !important;
+}
+
+/* Override Material-UI styles */
+.MuiTypography-root {
+  color: #3B82F6 !important;
+}
+
+.MuiInputLabel-root {
+  color: #3B82F6 !important;
+}
+
+.MuiOutlinedInput-root {
+  color: #3B82F6 !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: #3B82F6 !important;
+}
+
+.MuiRating-root {
+  color: #3B82F6 !important;
+}
+
+.MuiAlert-message {
+  color: #3B82F6 !important;
+}
+
+.MuiMenuItem-root {
+  color: #3B82F6 !important;
+} 
